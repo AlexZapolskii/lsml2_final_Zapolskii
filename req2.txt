@@ -1,0 +1,4 @@
+Flask==2.0.1
+numpy==1.21.2
+matplotlib==3.4.3
+scikit-image==0.18.3

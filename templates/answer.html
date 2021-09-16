@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image caption</title>
+    <style>
+        body {
+    margin: 0; 
+    font-size: 14pt;
+}
+#content {
+    border: 5px solid #3941b5; 
+    padding: 15px;
+    width: 500px; 
+    margin: 30px auto 50px; 
+}
+#footer {
+    position: fixed; 
+    left: 0; bottom: 0; 
+    color: #fff; 
+    width: 100%; 
+}
+#footer div {
+    padding: 10px; 
+    background: #3941b5; 
+}
+#form {
+    border: 4px solid #3941b5; 
+    width: 50%; 
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+    </style>
+</head>
+<body>
+    <h1 align="center">Image caption</h1>
+    <div id="content">
+      <p>Generated caption:</p>
+      <p> {% for el in output %}
+            {{el}}
+          {% endfor %}
+      </p>
+    </div>
+    <div id="footer">
+        <div>...</div>
+    </div>
+</body>
+</html>
